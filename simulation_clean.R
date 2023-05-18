@@ -120,7 +120,6 @@ simulation_model <- function(model, vars, times, params, X.times, X.vals,
   # remove negative points
   sim.res[sim.res < 0] <- 0
   
-  # if we filter by noise sd:
   if(noise.thres > 0){
     true.noise.sd <- 0
     while(true.noise.sd < noise.thres){
